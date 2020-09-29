@@ -41,7 +41,7 @@ source /home/user/django/venv/bin/activate
 BOT_TOKEN = 'XXXXXXXXXXXXXXXXXXXXX'
 BOT_NAME = 'your bot name'
 #ngrok can redirect to any IP:PORT in your LAN!
-#if run on the same host use 127.0.0.1:'your port'
+#if run on the same host use 127.0.0.1:_your port_
 REDIR_LOCAL_IP_PORT='192.168.1.100:8080'
 
 # log has information of all operations: (ngrok_restarter.log)
