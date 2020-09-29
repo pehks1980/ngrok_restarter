@@ -3,7 +3,7 @@
 # THIS ngrok_restarter script can restart it on the schedule and re-setup telegram api hook automatically to new ngrok daemon
 
 # ngrok_restarter
-restarts ngrok and rehooks it to your telegrambot on crontab schedule
+restarts ngrok and rehooks it to your telegrambot on crontab schedule (probably it works on linux only)
 
 to execute it on time user needs to add it to crontab
 
@@ -81,7 +81,7 @@ Restarted: date and time : 2020-09-29 16:49:07
 # all files should be (and will be) in the same folder:
 /ngrok_restarter$ ls -l
 total 26200
--rwxr-xr-x 1 user user 26683198 Oct  9  2019 ngrok
+-rwxr-xr-x 1 user user 26683198 Oct  9  2019 ngrok  <<<<<<<<<<<<<< ngrok executable download your system specific binary from https://ngrok.com/download
 -rw-rw-r-- 1 user user     1658 Sep 29 16:53 ngrok.log
 -rw-rw-r-- 1 user user   117132 Sep 29 17:44 ngrok_restarter.log
 -rw-rw-r-- 1 user user     4118 Sep 29 17:02 ngrok_restarter.py
