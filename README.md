@@ -44,7 +44,7 @@ BOT_NAME = 'your bot name'
 #if run on the same host use 127.0.0.1:'your port'
 REDIR_LOCAL_IP_PORT='192.168.1.100:8080'
 
-# ngrok_restarter.log has informtion log of operations:
+# log has information of all operations: (ngrok_restarter.log)
 
 =============/home/user/django/ngrok_restarter/ngrok_restarter.py==============
 script name: ngrok_restarter.py 
@@ -72,10 +72,20 @@ exec /home/user/django/ngrok_restarter/ngrok http 192.168.1.100:8080 -log=stdout
 ngrok started
 setting up url to telegram https://api.telegram.org/bot1xxxxxxxxxxxxxx/setWebhook?url=https://xxxxxxxxxxxx.ngrok.io/webhooks/telegram_bot/
 b'{"ok":true,"result":true,"description":"Webhook was set"}'
+
 ================================================
 ngrok set to webhook on channel = https://xxxxxxxxxx.ngrok.io
 Restarted: date and time : 2020-09-29 16:49:07
 =============/home/user/django/ngrok_restarter/ngrok_restarter.py==============
+
+# all files should be (and will be) in the same folder:
+/ngrok_restarter$ ls -l
+total 26200
+-rwxr-xr-x 1 user user 26683198 Oct  9  2019 ngrok
+-rw-rw-r-- 1 user user     1658 Sep 29 16:53 ngrok.log
+-rw-rw-r-- 1 user user   117132 Sep 29 17:44 ngrok_restarter.log
+-rw-rw-r-- 1 user user     4118 Sep 29 17:02 ngrok_restarter.py
+-rw-rw-r-- 1 user user       19 Sep 29 16:49 ngrok_restart.log
 
 
 
