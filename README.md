@@ -20,8 +20,8 @@ crontab -e
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
-
-SHELL=/bin/bash
+#this is needed because BASH has 'source' op , SH (in ubu its default) doesn't have
+SHELL=/bin/bash 
 
 */1 * * * * source /home/user/.bashrc && source /home/user/django/env/bin/activate && python /home/user/django/ngrok_restarter/ngrok_restarter.py >> /home/user/django/ngrok_restarter/ngrok_restarter.log 2>&1
 ...
