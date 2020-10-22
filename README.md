@@ -90,7 +90,10 @@ all files should be (and will be) in the same folder:
     -rw-rw-r-- 1 user user       19 Sep 29 16:49 ngrok_restart.log
 
 
-
+emergency restart (if you need it suddenly) - when script starts it looks for file ngrok.log if no such file found - script creates it and executes restart!
+    
+    rm ngrok.log
+    python3 ngrok_restarter.py
 
 
 
