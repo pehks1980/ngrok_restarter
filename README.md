@@ -28,7 +28,7 @@ THIS ngrok_restarter script can restart it on the schedule and re-setup telegram
     ...
 
 
-# .bashrc might need to set up your specific PYTHONPATH variable(when running main project):
+.bashrc might need to set up your specific PYTHONPATH variable(when running main project):
 
     ....
     export PYTHONPATH="${PYTHONPATH}:/home/user/django/"
@@ -37,7 +37,7 @@ THIS ngrok_restarter script can restart it on the schedule and re-setup telegram
     #autoactivate virtual environment when login
     source /home/user/django/venv/bin/activate
 
-# to setup your local test telegram bot hooked to run on local IP address:
+to setup your local test telegram bot hooked to run on local IP address:
 
     BOT_TOKEN = 'XXXXXXXXXXXXXXXXXXXXX'
     BOT_NAME = 'your bot name'
@@ -45,7 +45,7 @@ THIS ngrok_restarter script can restart it on the schedule and re-setup telegram
     #if run on the same host use 127.0.0.1:_your port_
     REDIR_LOCAL_IP_PORT='192.168.1.100:8080'
 
-# log has information of all operations: (ngrok_restarter.log)
+log has information of all operations: (ngrok_restarter.log)
 
     =============/home/user/django/ngrok_restarter/ngrok_restarter.py==============
     script name: ngrok_restarter.py 
@@ -79,7 +79,8 @@ THIS ngrok_restarter script can restart it on the schedule and re-setup telegram
     Restarted: date and time : 2020-09-29 16:49:07
     =============/home/user/django/ngrok_restarter/ngrok_restarter.py==============
 
-# all files should be (and will be) in the same folder:
+all files should be (and will be) in the same folder:
+
     /ngrok_restarter$ ls -l
     total 26200
     -rwxr-xr-x 1 user user 26683198 Oct  9  2019 ngrok  <<<<<<<<<<<<<< ngrok executable download your system specific binary from https://ngrok.com/download
